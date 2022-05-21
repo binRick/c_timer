@@ -23,3 +23,7 @@ This project is built using `meson` and `ninja`.
 
 3. Test
    $ meson test -C build --verbose
+
+4. Usage
+
+   ![timer2.c screenshot](./screenshots/timer2.png)
