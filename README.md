@@ -1,7 +1,7 @@
 
 # c_timer
 
-![Example screenshot](./screenshots/tests0.png)
+![Tests screenshot](./screenshots/tests0.png)
 
 ## A tool to time c code
 
@@ -30,4 +30,4 @@ This project is built using `meson` and `ninja`.
 
 4. Invocation
 
-   ![timer2-invocation.png screenshot](screenshots/timer2-invocation.png)
+   ![timer2-invocation.png screenshot](./screenshots/timer2-invocation.png)
