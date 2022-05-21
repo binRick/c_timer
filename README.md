@@ -3,7 +3,7 @@
 
 ![Example screenshot](./screenshots/tests0.png)
 
-_A tool to time c code
+## A tool to time c code
 
 ### Prerequisites
 
