@@ -1,0 +1,21 @@
+{
+  "name": "c_timer",
+  "version": "x",
+  "repo": "binRick/c_timer",
+  "description": "c_timer",
+  "keywords": [
+    "c",
+    "c_timer"
+  ],
+  "license": "MIT",
+  "makefile": "Makefile",
+  "install": "make install",
+  "files": [],
+  "dependencies": {
+    "flag": "0.0.1",
+    "clibs/timestamp": "0.0.2",
+    "ms": "0.0.4",
+    "bytes": "0.0.4",
+    "littlstar/b64.c": "0.0.2"
+  }
+}
