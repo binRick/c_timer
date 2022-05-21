@@ -26,7 +26,8 @@ HELP_STYLE=$(BLINE) -H -a ff00ff
 DEV_MAKE_TARGETS = \
 				   all
 DEV_TEST_TARGETS = \
-				   
+				   test
+
 
 
 ##########################################################
@@ -63,8 +64,11 @@ build:
 	@test -d $(BUILD_DIR) && {  meson $(BUILD_DIR) --reconfigure; } || { meson $(BUILD_DIR); }
 	@ninja -C build
 
-test:
+test: build
 	@meson test -C $(BUILD_DIR) --verbose
+
+dev-test:	
+	@nodemon -e c,h -w './src/*.c' -w './include/*.h' -w './bins/*.c' -w './build/timer*' -x sh -- -c 'make test||true'
 
 clean:
 	@test -d $(BUILD_DIR) && rm -rf $(BUILD_DIR)
@@ -88,8 +92,11 @@ push: tidy git-commit
 
 do-bins: make-bins
 
+
 uncrustify:
 	@uncrustify -c etc/uncrustify.cfg --replace bins/*.c
+	@uncrustify -c etc/uncrustify.cfg --replace include/*.h
+	@uncrustify -c etc/uncrustify.cfg --replace src/*.c
 	@shfmt -w scripts/*.sh
 
 uncrustify-clean:	

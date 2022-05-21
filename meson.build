@@ -24,7 +24,6 @@ sh = find_program('sh', required : true)
 pwd_bin = find_program('pwd', required : true)
 passh = find_program('passh', required : true)
 #//***********************************************************/
-ensure_dev_includes = run_command(sh, '-c', '[[ -f include/embedded-colornames-dev.h ]] || touch include/embedded-colornames-dev.h', check: true).stdout().strip().split('\n')
 find_deps = run_command(sh, '-c', find_deps_cmd, check: true).stdout().strip().split('\n')
 enabled_bins = run_command(sh, '-c', find_enabled_bins_cmd, check: true).stdout().strip().split('\n')
 pwd = run_command(pwd_bin, check: true).stdout().strip()
