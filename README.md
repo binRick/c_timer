@@ -27,3 +27,7 @@ This project is built using `meson` and `ninja`.
 4. Usage
 
    ![timer2.c screenshot](./screenshots/timer2.png)
+
+4. Invocation
+
+   ![timer2-invocation.png screenshot](screenshots/timer2-invocation.png)

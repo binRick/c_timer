@@ -1,5 +1,5 @@
 // MESON_BIN_ENABLED=true
-#include "../src/includes.c"
+#include "../src/c_timer.c"
 ///////////////////////////////////
 #define BUF          1024
 #define INNER_QTY    3

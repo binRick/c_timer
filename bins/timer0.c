@@ -1,5 +1,5 @@
 // MESON_BIN_ENABLED=true
-#include "../src/includes.c"
+#include "../src/c_timer.c"
 char *str;
 char *enc;
 char *dec;
