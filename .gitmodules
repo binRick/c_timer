@@ -1,3 +1,6 @@
 [submodule "submodules/simpleconf"]
 	path = submodules/simpleconf
 	url = https://github.com/jedisct1/simpleconf
+[submodule "submodules/b64.c"]
+	path = submodules/b64.c
+	url = https://github.com/littlstar/b64.c
