@@ -31,7 +31,12 @@ typedef struct ct_node {
 /////////////////////////////////////////////////////
 /////////////////////////////////////////////////////
 /////////////////////////////////////////////////////
-
+#ifndef OK
 #define OK(MSG)    { fprintf(stderr, "  \e[32m\u2713 \e[90mOK- %s\e[0m\n", MSG); }
+#endif
+
+static void ct_set_unit(ct_unit unit) ;
+static void ct_start(char const *msg) ;
+char * ct_stop(const char *msg) ;
 
 #endif
