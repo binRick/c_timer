@@ -11,11 +11,11 @@ static ct_unit         ct_output_unit = ct_SECONDS;
 
 
   /////////////////////////////////
-static void ct_set_unit(ct_unit unit) {
+void ct_set_unit(ct_unit unit) {
     ct_output_unit = unit;
 }
 
-static void ct_start(char const *msg) {
+void ct_start(char const *msg) {
   ct_node *new_node = (ct_node *)malloc(sizeof(ct_node));
 
   assert(new_node);
