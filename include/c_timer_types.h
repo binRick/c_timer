@@ -1,5 +1,7 @@
 #pragma once
-#include "../include/includes.h"
+#ifndef C_TIMER_TYPES_H
+#define C_TIMER_TYPES_H
+#include <time.h>
 
 typedef enum ct_unit {
   ct_SECONDS,
@@ -11,4 +13,4 @@ typedef struct ct_node {
   struct timespec start_time;
   struct ct_node  *next;
 } ct_node;
-
+#endif
