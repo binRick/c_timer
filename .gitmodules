@@ -4,3 +4,6 @@
 [submodule "submodules/b64.c"]
 	path = submodules/b64.c
 	url = https://github.com/littlstar/b64.c
+[submodule "submodules/meson_deps"]
+	path = submodules/meson_deps
+	url = https://github.com/binRick/meson_deps

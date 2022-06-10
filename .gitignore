@@ -2,3 +2,4 @@
 build
 .nodemon.log
 deps
+*/.attic/

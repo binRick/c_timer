@@ -10,8 +10,8 @@
 #include <string.h>
 #include <sys/time.h>
 #include <time.h>
-#include <unistd.h>
 #include <time.h>
+#include <unistd.h>
 /////////////////////////////////
 #define NANOSECONDS_PER_SECOND     1000000000
 #define MICROSECONDS_PER_SECOND    1000000
@@ -37,6 +37,6 @@ typedef struct ct_node {
 
 void ct_set_unit(ct_unit unit);
 void ct_start(char const *msg);
-char * ct_stop(const char *msg) ;
+char * ct_stop(const char *msg);
 
 #endif
